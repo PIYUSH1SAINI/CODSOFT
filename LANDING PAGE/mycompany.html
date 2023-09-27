@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5bec991c4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Roboto&display=swap" rel="stylesheet">
+    <title>Piyush Saini Project</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="leftnav">
+                <ul class="list leftlist">
+                    <li><a href="item-1">
+                            <i class="fa fa-user"></i>
+                            MyAccount</a></li>
+                    <li><a href="item-1">
+                            <i class="fa-solid fa-heart"></i>
+                            Wishlist</a></li>
+                    <li><a href="item-1">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            My Cart</a></li>
+                    <li><a href="item-1">
+                            <i class="fa-solid fa-check"></i>
+                            Checkout</a></li>
+                    <li><a href="item-1">
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            Login</a></li>
+                </ul>
+            </div>
+
+            <div class="rightnav">
+                <ul class="list rightlist">
+                    <li><span>Currency-INR</span></li>
+                    <li><span>Language-English</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="branding">
+        <div class="logo">
+            <span class="firstspan">My</span><span class="secondspan">Company</span>
+        </div>
+        <div onclick="ToggleCartDiv()" class="wrapper">
+            <button class="btnCart"><span id='cart-counter'>0</span> Cart <i class="fa fa-shopping-cart"></i></button>
+
+            <div id="divCardDiv" class="tooltip">
+                <ul id="ulCartList">
+                    <li id="liDefaultCartItem" class="cardListItem">Cart is empty</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navbar">
+        <ul class="navul">
+            <li class="defaultPage"><a href="">Home</a></li>
+            <li><a href="">Shop Page</a></li>
+            <li><a href="">Single Product</a></li>
+            <li><a href="">Cart</a></li>
+            <li><a href="">Checkout</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="greyBackgound">
+        <div class="greyblock">
+            <div class="greyContent">
+                <h2>We are superb</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorum labore dolorem earum. Eum
+                    quos cumque excepturi cum ducimus accusantium libero facilis commodi possimus nobis tempore
+                    aspernatur sint incidunt, deserunt </p>
+                <button><a href="">Learn More</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="tilt">
+        <div class="features">
+            <div class="featuresbox">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                <div class="boxText">30 Days return</div>
+            </div>
+            <div class="featuresbox">
+                <i class="fa-solid fa-truck"></i>
+                <div class="boxText">Free Shipping</div>
+
+            </div>
+            <div class="featuresbox">
+                <i class="fa-solid fa-lock"></i>
+                <div class="boxText">Secure payments</div>
+            </div>
+            <div class="featuresbox">
+                <i class="fa-solid fa-gift"></i>
+                <div class="boxText">New products</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="LatestProducts">
+        <h2 class="headingtext">Latest Products</h2>
+        <div class="NextPrevbutton">
+            <button class="btn">
+                Prev
+            </button>
+            <button class="btn">
+                Next
+            </button>
+        </div>
+        <div class="flexproductcontainer">
+            <div class="productcontainer" id="1">
+                <div class="imgblock">
+                    <img class="itemURL" src="sony tv.jpeg" alt="" width="250px" height="190px">
+                </div>
+                <p class="video-info">Sony Smart TV - 2015</p>
+                <p><span class="itemPrice">$700.00</span></p>
+                <div class="add-to">
+                    <button class="view-btn">View</button>
+
+                    <button class="add-cart sub-button" onclick="AddItemToCart(1)">Add to cart</button>
+
+                </div>
+            </div>
+            <div class="productcontainer" id="2">
+                <div class="imgblock">
+                    <img class="itemURL" src="macbook.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <p class="video-info">Apple new mac book 2015 March :p</p>
+                <p><span class="itemPrice">$899.00</span></p>
+                <div class="add-to">
+                    <button class="view-btn">View</button>
+
+                    <button class="add-cart sub-button" onclick="AddItemToCart(2)">Add to cart</button>
+
+                </div>
+            </div>
+            <div class="productcontainer" id="3">
+                <div class="imgblock">
+                    <img class="itemURL" src="iphone 6.jpeg" alt="" width="200px" height="180px">
+                </div>
+                <p class="video-info">Apple new iphone-6</p>
+                <p><span class="itemPrice">$400.00</span></p>
+                <div class="add-to">
+                    <button class="view-btn">View</button>
+
+                    <button class="add-cart sub-button" onclick="AddItemToCart(3)">Add to cart</button>
+
+                </div>
+            </div>
+            <div class="productcontainer" id="4">
+                <div class="imgblock">
+                    <img class="itemURL" src="ps4.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <p class="video-info">Sony Playstation microsoft</p>
+                <p><span class="itemPrice">$700.00</span></p>
+                <div class="add-to">
+                    <button class="view-btn">View</button>
+
+                    <button class="add-cart sub-button" onclick="AddItemToCart(4)">Add to cart</button>
+
+                </div>
+            </div>
+            <div class="productcontainer" id="5">
+                <div class="imgblock">
+                    <img class="itemURL" src="ac.png" alt="" width="200px" height="200px">
+                </div>
+                <p class="video-info">Sony Smart Air Condition</p>
+                <p><span class="itemPrice">$1200.00</span></p>
+                <div class="add-to">
+                    <button class="view-btn">View</button>
+
+                    <button class="add-cart sub-button" onclick="AddItemToCart(5)">Add to cart</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tilt1">
+        <div class="brands">
+            <h2 class="headingtext" style="color: white;">Brands</h2>
+            <div class="NextPrevbutton">
+                <button class="btn">
+                    Prev
+                </button>
+                <button class="btn">
+                    Next
+                </button>
+            </div>
+            <div class="brandslogo">
+                <img src="blogo.png" alt="" height="150px" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <div class="review1 reviewContainer">
+            <div class="topsellersCont">
+                <h2>Top Sellers</h2>
+                <button><a href="">View All</a></button>
+            </div>
+            <div class="reviewProduct">
+                <img src="sony tv.jpeg" alt="" width="70px" height="70px">
+                <div class="productDetails">
+
+                    <div class="productName">
+                        Sony Smart TV - 2015
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                    </div>
+                    <div class="price">
+                        $400.00 <span>$425.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviewProduct">
+                <img src="macbook.jpeg" alt="" width="70px" height="70px">
+                <div class="productDetails">
+
+                    <div class="productName">
+                        Apple New Macbook-2015
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                    </div>
+                    <div class="price">
+                        $400.00 <span>$425.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviewProduct">
+                <img src="iphone 6.jpeg" alt="" width="70px" height="70px">
+                <div class="productDetails">
+
+                    <div class="productName">
+                        Apple new iphone-6
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                    </div>
+                    <div class="price">
+                        $400.00 <span>$425.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review2 reviewContainer">
+            <div class="topsellersCont">
+                <h2>Recently Viewed</h2>
+                <button><a href="">View All</a></button>
+                <!-- <button>View All</button> -->
+            </div>
+            <div class="reviewProduct">
+                <img src="ps4.jpeg" alt="" width="70px" height="70px">
+                <div class="productDetails">
+
+                    <div class="productName">
+                        Sony Playstation microsoft
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                    </div>
+                    <div class="price">
+                        $400.00 <span>$425.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviewProduct">
+                <img src="ac.png" alt="" width="70px" height="70px">
+                <div class="productDetails">
+
+                    <div class="productName">
+                        Sony Smart air condition
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                    </div>
+                    <div class="price">
+                        $400.00 <span>$425.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviewProduct">
+                <img src="note4.jpeg" alt="" width="70px" height="70px">
+                <div class="productDetails">
+
+                    <div class="productName">
+                        Samsung Galaxy note-4
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                    </div>
+                    <div class="price">
+                        $400.00 <span>$425.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review3 reviewContainer">
+            <div class="topsellersCont">
+                <h2>Top New</h2>
+                <!-- <button></button> -->
+                <button><a href="">View All</a></button>
+
+            </div>
+            <div class="reviewProduct">
+                <img src="iphone 6.jpeg" alt="" width="70px" height="70px">
+                <div class="productDetails">
+
+                    <div class="productName">
+                        Apple new iphone-6
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                    </div>
+                    <div class="price">
+                        $400.00 <span>$425.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviewProduct">
+                <img src="note4.jpeg" alt="" width="70px" height="70px">
+                <div class="productDetails">
+
+                    <div class="productName">
+                        Samsung Galaxy note-4
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                    </div>
+                    <div class="price">
+                        $400.00 <span>$425.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviewProduct">
+                <img src="ps4.jpeg" alt="" width="70px" height="70px">
+                <div class="productDetails">
+
+                    <div class="productName">
+                        Sony Playstation microsoft
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                        <i class="fa-solid fa-star" style="color: #dee10e;"></i>
+                    </div>
+                    <div class="price">
+                        $400.00 <span>$425.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tilt2">
+        <div class="contactUs">
+            <div class="CompanySocial">
+                <h2>My <span style="color: green;">Company</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quasi temporibus natus reiciendis,
+                    assumenda necessitatibus omnis facere inventore repudiandae iusto labore, enim libero praesentium
+                    neque.</p>
+                <div class="socials">
+                    <div class="facebook socialMedia">
+                        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="twitter socialMedia">
+                        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="youtube socialMedia">
+                        <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="linkedin socialMedia">
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="pinterest socialMedia">
+                        <i class="fa-brands fa-pinterest" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="userNavigation usercat">
+                <h2>User Navigation</h2>
+                <p>My account</p>
+                <div class="border">
+
+                </div>
+                <p>Order history</p>
+                <div class="border">
+
+                </div>
+                <p>Wishlist</p>
+                <div class="border">
+
+                </div>
+                <p>Vendor contact</p>
+                <div class="border">
+
+                </div>
+                <p>Front page</p>
+                <div class="border">
+
+                </div>
+            </div>
+            <div class="categories usercat">
+                <h2>Categories</h2>
+                <p>Mobile Phone</p>
+                <div class="border">
+
+                </div>
+                <p>Home accesseries</p>
+                <div class="border">
+
+                </div>
+                <p>LED TV</p>
+                <div class="border">
+
+                </div>
+                <p>Computer</p>
+                <div class="border">
+
+                </div>
+                <p>Grades</p>
+                <div class="border">
+
+                </div>
+
+            </div>
+            <div class="Newsletter">
+                <h2>Newsletter</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nobis repellat molestiae rem.
+                    Soluta voluptatibus possimus tempore totam! Ex maiores minus similique totam adipisci esse vitae
+                    dolorum ipsam quibusdam nobis iste, perspiciatis corrupti quos, rem quasi!</p>
+
+                <input type="text" name="" id="" placeholder="Type your email" class="inputletter">
+                <div class="button">
+                    <button><a href="">Subscribe</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> &copy; 2016-2017 My-Company. All Rights Reserved. Coded with &hearts; by <span>My-Company</span></p>
+        <div class="cards">
+            <i class="fa-brands fa-cc-discover" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-cc-paypal" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function btnSubscribeClick() {
+            let emailAdd = document.getElementById('inpEmailAddress')
+            alert("Email sent to " + emailAdd.value)
+        }
+
+        function ToggleCartDiv() {
+            // var x = document.getElementById("divCardDiv");
+            // if (x.style.display === "none") {
+            //     x.style.display = "block";
+            // } else {
+            //     x.style.display = "none";
+            // }
+        }
+
+        function AddItemToCart(id) {
+            //Check if default placeholder exists or not
+            let defaultList = document.getElementById('liDefaultCartItem')
+            if (defaultList != null) {
+                defaultList.remove()
+            }
+            //Check if item was previously added 
+            let ifNodeExists = document.getElementById("itemCart" + id)
+            console.log(ifNodeExists)
+            if (ifNodeExists != null) {
+                return false
+            }
+
+            let item = document.getElementById(id)
+            let itemName = item.querySelector('.video-info').cloneNode(true)
+            let itemPrice = item.querySelector('.itemPrice').cloneNode(true)
+
+            //Create root element
+            let itemListNode = document.createElement('li')
+            itemListNode.id = 'itemCart' + id;
+            itemListNode.className = "cardListItem"
+
+
+            //Insert remove button in root element
+            let itemDelete = document.createElement('span')
+            itemDelete.innerHTML = '<button onclick="RemoveItemFromCart(' + id + ')">Remove</button>'
+            itemListNode.appendChild(itemDelete)
+            //Insert Item Price and Item Delete in root element
+            let itelList = itemListNode.appendChild(itemPrice)
+            itemListNode.appendChild(itemName)
+            itemListNode.appendChild(itemDelete)
+
+            let addToCartDivList = document.getElementById('ulCartList')
+            addToCartDivList.appendChild(itemListNode)
+
+            UpdateCounter()
+
+
+        }
+
+        function UpdateCounter() {
+            let cartCounterElement = document.getElementById('cart-counter')
+            let cartItems = document.getElementsByClassName('cardListItem')
+            cartCounterElement.innerHTML = cartItems.length
+        }
+
+        function RemoveItemFromCart(id) {
+            let nodeToDelete = document.getElementById("itemCart" + id)
+            nodeToDelete.remove()
+            UpdateCounter()
+        }
+
+    </script>
+
+</body>
+
+</html>
